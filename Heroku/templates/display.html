@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Results</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style type="text/css">
+      body {
+        word-wrap: break-word;
+      }
+    </style>
+  </head>
+  <body>
+    <h5><a href="/">Return Back</a></h5>
+    {% block content %}
+    {% if seq %}
+      {%for i in inf:%}
+        <div class="w3-card-4">
+          <header class="w3-container w3-blue">
+            <h1>{{i['key']}}</h1>
+          </header>
+
+          <div class="w3-container">
+            <p>{{i['chain']}}</p>
+          </div>
+
+          <footer class="w3-container w3-blue">
+            <h6><a href="{{i['url']}}">Link</a></h5>
+            <h8>{{i['databank']}}</h5>
+          </footer>
+        </div>
+        <br>
+        <br>
+      {%endfor%}
+      {% else %}
+        <h2>Data not found!</h2>
+      {% endif %}
+  {% endblock content %}
+  </body>
+</html>

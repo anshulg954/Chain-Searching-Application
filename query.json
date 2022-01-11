@@ -1,0 +1,37 @@
+{
+  "query": {
+    "parameters": { "value": "a" },
+    "service": "text",
+    "type": "terminal",
+    "node_id": 0
+  },
+  "return_type": "entry",
+  "request_options": {
+    "pager": { "start": 100, "rows": 100 },
+    "scoring_strategy": "combined",
+    "sort": [{ "sort_by": "score", "direction": "desc" }]
+  },
+  "request_info": {
+    "src": "ui",
+    "query_id": "81b2a20834e1c9279b0aaa234d8f3fe6"
+  }
+}
+
+{
+  "query": {
+    "parameters": { "value": "a" },
+    "service": "text",
+    "type": "terminal",
+    "node_id": 0
+  },
+  "return_type": "entry",
+  "request_options": {
+    "pager": { "start": 100, "rows": 100 },
+    "scoring_strategy": "combined",
+    "sort": [{ "sort_by": "score", "direction": "desc" }]
+  },
+  "request_info": {
+    "src": "ui",
+    "query_id": "81b2a20834e1c9279b0aaa234d8f3fe6"
+  }
+}

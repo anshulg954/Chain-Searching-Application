@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      .main {
+        background-image: url("https://www.thesun.co.uk/wp-content/uploads/2020/11/NINTCHDBPICT000622999416.jpg");
+        background-size: auto;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      p {
+        font-size: 90px;
+        font-weight: bold;
+        font-family: arial black;
+      }
+      input {
+        width: 550px;
+        height: 50px;
+        margin: 20px;
+      }
+      a {
+        font-size: 40px;
+        font-weight: bold;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body class="main">
+    <div class="centered">
+      <p><span style="color: white">ENTER CHAIN:</span></p>
+      <form action="#" method="post">
+        <input type="text" name="data" />
+        <input type="submit" name="submit" />
+        {% if data1 %}
+        <br />
+        <br />
+        <a href="{{ data1 }}">Identical</a>
+        <br />
+        <a href="{{ data2 }}">Homologous</a>
+        <br />
+        {% endif %}
+      </form>
+    </div>
+  </body>
+</html>

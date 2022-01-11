@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home Page</title>
+    <style>
+      h2 {
+        font-size: 40px;
+        font-family: "Cooper Black";
+      }
+      .split {
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+      }
+      .left {
+        left: 0;
+        background-image: url("https://media.xconomy.com/wordpress/wp-content/images/2020/06/18033227/iStock-1167361467.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .right {
+        right: 0;
+        background-image: url("https://www.thesun.co.uk/wp-content/uploads/2020/11/NINTCHDBPICT000622999416.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+      .centered {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+
+      input {
+        width: 200px;
+        box-sizing: border-box;
+        height: 30px;
+        border: 1px solid black;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+        font-family: arial black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="split left">
+      <div class="centered">
+        <h2><span style="color: black">Identical Sequence Searching</span></h2>
+        <form method="post" action="/identical">
+          <p>Enter Sequence:</p>
+          <br />
+          <input type="text" name="identical_input" />
+          <br />
+          <input type="submit" value="SEARCH" />
+        </form>
+      </div>
+    </div>
+
+    <div class="split right">
+      <div class="centered">
+        <h2><span style="color: white">Homologous Sequence Searching</span></h2>
+        <form method="post" action="/homologous">
+          <p><span style="color: white">Enter Sequence: </span></p>
+          <br />
+          <input type="text" name="homologous_input" />
+          <br />
+          <input type="submit" value="SEARCH" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
